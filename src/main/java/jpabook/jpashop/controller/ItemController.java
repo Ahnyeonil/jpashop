@@ -73,7 +73,7 @@ public class ItemController {
         book.setAuthor(form.getAuthor());
         book.setIsbn(form.getIsbn());
 
-        itemService.saveItem(book);
+//        itemService.saveItem(book);
 
         itemService.updateItem(itemId, form.getPrice(), form.getName(), form.getStockQuantity());
         return "redirect:/items";
